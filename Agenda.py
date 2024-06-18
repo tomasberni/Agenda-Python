@@ -39,8 +39,8 @@ while True:
         nombre = str(input("Ingresa el nombre del contacto que deseas eliminar: "))
         if nombre.title() in contactos[0]:
             indice = contactos[0].index(nombre.title())
-            del contactos[0][indice]  # Elimina el nombre
-            del contactos[1][indice]  # Elimina el número de teléfono correspondiente
+            del contactos[0][indice]  
+            del contactos[1][indice]
             print("\nContacto eliminado correctamente\n")
             print(contactos)
         else:
